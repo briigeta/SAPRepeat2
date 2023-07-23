@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'passwords#index'
+  resources :passwords, except: [:destroy]
+  delete '/passwords/:id', to: 'passwords#destroy', as: 'delete_password'
 end

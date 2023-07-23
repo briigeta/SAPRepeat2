@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap"; 
+
+ body{
+    background-color: darkseagreen;
+ }
+ h1{
+    font-weight: 300;
+    text-align: center;
+ }
+
+ h3{
+    font-weight: 300;
+    text-align: center;
+ }
+ 
+ table {
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+ }
+
+ a.linkdesign{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+ }
+ 
+ a.linkdesign:hover{
+    color: darkgrey;
+
+ }
+
+ form{
+    display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  max-width: 400px; 
+  margin: 0 auto; 
+ }
