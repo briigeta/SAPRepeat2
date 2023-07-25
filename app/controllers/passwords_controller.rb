@@ -1,7 +1,9 @@
 # app/controllers/passwords_controller.rb
 class PasswordsController < ApplicationController
+  before_action :authenticate_user!
+  
     def index
-      @passwords = Password.all
+      @passwords = current_user.passwords
     end
 
     def destroy
@@ -15,11 +17,11 @@ class PasswordsController < ApplicationController
     end
   
     def new
-      @password = Password.new
+      @password = current_user.passwords.build
     end
   
     def create
-      @password = Password.new(password_params)
+      @password = current_user.passwords.build(password_params)
       if @password.save
         redirect_to @password, notice: 'Password entry was successfully created.'
       else
