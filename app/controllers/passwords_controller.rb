@@ -28,6 +28,7 @@ class PasswordsController < ApplicationController
         render :new
       end
     end
+    
   
     def edit
       @password = Password.find(params[:id])
@@ -49,9 +50,9 @@ class PasswordsController < ApplicationController
     end
   
     private
-  
+
     def password_params
-      params.require(:password).permit(:website, :username, :password)
+      params.require(:password).permit(:website, :username, :password, :password_confirmation)
     end
   end
   

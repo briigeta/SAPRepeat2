@@ -6,7 +6,7 @@ gem 'sassc'
 gem 'bootstrap', '~> 5.2.3'
 gem 'jquery-rails'
 gem 'devise'
-
+gem 'bcrypt', '~> 3.1.7'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.6"

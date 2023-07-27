@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_25_013921) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_26_234031) do
   create_table "passwords", force: :cascade do |t|
     t.string "website"
     t.string "username"
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_25_013921) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id", default: 0
+    t.string "password_digest"
     t.index ["user_id"], name: "index_passwords_on_user_id"
   end
 
