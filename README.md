@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is what you need to run this on your machine!
 
-Things you may want to cover:
 
-* Ruby version
+Please use Ruby version 3.2.2
+Rails version 7.0.6
+NodeJs are also needed and yarn to run the rails server.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+VSCODE is the IDE most preferable to use.
